@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.TestFeatures.Week4.Create_post</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-02-26 07:30:33 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:20]"><span>[1.1:20]</span> <span>cat name: &lt;title&gt;</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:20]"><span>[1.2:20]</span> <span>cat name: &lt;title&gt;</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/TestFeatures/Week4/Create_post.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">scenario outline using a dynamic table</span>
+          <span class="feature-description">from a csv file</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:20]</span>
+                <span class="scenario-name">cat name: &lt;title&gt;</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1324</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def users = read(&#39;DataForCreatePostByUserId.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.5">19:30:31.305 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url JsonPlaceholderURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { title: &#39;#(title)&#39;, body: &#39;#(body)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">26</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1261</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">19:30:31.683 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 37
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;#(title)&quot;,&quot;body&quot;:&quot;#(body)&quot;}
+
+19:30:32.591 response time in milliseconds: 902
+1 &lt; 201
+1 &lt; Date: Sat, 26 Feb 2022 18:30:20 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 59
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1645900264
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; Location: http://jsonplaceholder.typicode.com/posts/101
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Etag: W/&quot;3b-tqZIMpB0k0S54jmTCeAroWkRkE8&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=o%2BrDcfHuYk6XStu%2FDDsFPHMXHnUo%2BjfC73e9t%2FxvIVbXRPJN898i%2FBmMWvrrwhSAa5WDUXeVC7v5f%2FExDcagPStR9ww40urVdujOaMIEQodfSfJUMS5RHXeXn9Jg6OWttn11ihydqh3Mt2f%2BXdOG&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6e3b3e7a1e4b3760-MXP
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;#(title)&quot;,
+  &quot;body&quot;: &quot;#(body)&quot;,
+  &quot;id&quot;: 101
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">19:30:32.600 [print] {
+  &quot;title&quot;: &quot;#(title)&quot;,
+  &quot;body&quot;: &quot;#(body)&quot;,
+  &quot;id&quot;: 101
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>assert response == {&quot;title&quot;: &quot;#(title)&quot;,&quot;body&quot;: &quot;#(body)&quot;,&quot;id&quot;: &#39;#number&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">19:30:32.631 src/test/java/TestFeatures/Week4/Create_post.feature:15
+And assert response == {&quot;title&quot;: &quot;#(title)&quot;,&quot;body&quot;: &quot;#(body)&quot;,&quot;id&quot;: &#39;#number&#39;}
+did not evaluate to &#39;true&#39;: response == {&quot;title&quot;: &quot;#(title)&quot;,&quot;body&quot;: &quot;#(body)&quot;,&quot;id&quot;: &#39;#number&#39;}
+src/test/java/TestFeatures/Week4/Create_post.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:20]</span>
+                <span class="scenario-name">cat name: &lt;title&gt;</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>677</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def users = read(&#39;DataForCreatePostByUserId.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.5">19:30:32.642 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url JsonPlaceholderURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { title: &#39;#(title)&#39;, body: &#39;#(body)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">673</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.11">19:30:32.649 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 37
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;#(title)&quot;,&quot;body&quot;:&quot;#(body)&quot;}
+
+19:30:33.320 response time in milliseconds: 670
+1 &lt; 201
+1 &lt; Date: Sat, 26 Feb 2022 18:30:21 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 59
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 998
+1 &lt; X-Ratelimit-Reset: 1645900264
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; Location: http://jsonplaceholder.typicode.com/posts/101
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Etag: W/&quot;3b-tqZIMpB0k0S54jmTCeAroWkRkE8&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=z4NsxuKhZzGaUaxR3opWPmg019XnCLlX5fvtkogud4j8A9tkTmqvYTft6Fl%2Ffd456tm0XYxEeIKjvcnYAjiK8tnp0KElkS%2FgPM1huxBHzCGdseJdB6bA8ZNLMcadZt%2BBKzyEe4duomRGziJiz6r2&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6e3b3e7e6a77374d-MXP
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;#(title)&quot;,
+  &quot;body&quot;: &quot;#(body)&quot;,
+  &quot;id&quot;: 101
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.13">19:30:33.321 [print] {
+  &quot;title&quot;: &quot;#(title)&quot;,
+  &quot;body&quot;: &quot;#(body)&quot;,
+  &quot;id&quot;: 101
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>assert response == {&quot;title&quot;: &quot;#(title)&quot;,&quot;body&quot;: &quot;#(body)&quot;,&quot;id&quot;: &#39;#number&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.15">19:30:33.321 src/test/java/TestFeatures/Week4/Create_post.feature:15
+And assert response == {&quot;title&quot;: &quot;#(title)&quot;,&quot;body&quot;: &quot;#(body)&quot;,&quot;id&quot;: &#39;#number&#39;}
+did not evaluate to &#39;true&#39;: response == {&quot;title&quot;: &quot;#(title)&quot;,&quot;body&quot;: &quot;#(body)&quot;,&quot;id&quot;: &#39;#number&#39;}
+src/test/java/TestFeatures/Week4/Create_post.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

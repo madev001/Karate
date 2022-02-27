@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/TestFeatures\/week3\/matchFromcsv[1.1:20]","start":1645373670850,"end":1645373671763,"title":"src\/test\/java\/TestFeatures\/week3\/matchFromcsv[1.1:20] 17:14:30.850-17:14:31.763 get - <id>","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/TestFeatures\/week3\/matchFromcsv[1.2:20]","start":1645373671768,"end":1645373672158,"title":"src\/test\/java\/TestFeatures\/week3\/matchFromcsv[1.2:20] 17:14:31.768-17:14:32.158 get - <id>","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/TestFeatures\/week3\/matchFromcsv[1.3:20]","start":1645373672162,"end":1645373672474,"title":"src\/test\/java\/TestFeatures\/week3\/matchFromcsv[1.3:20] 17:14:32.162-17:14:32.474 get - <id>","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/testapi[1:8]","start":1644084427256,"end":1644084428064,"title":"src\/test\/java\/testapi[1:8] 19:07:07.256-19:07:08.064 test API get 1","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/testapi[2:17]","start":1644084428068,"end":1644084428455,"title":"src\/test\/java\/testapi[2:17] 19:07:08.068-19:07:08.455 test API post 2"},{"id":3,"group":1,"content":"src\/test\/java\/testapi[3:26]","start":1644084428458,"end":1644084428734,"title":"src\/test\/java\/testapi[3:26] 19:07:08.458-19:07:08.734 test API post 3"},{"id":4,"group":1,"content":"src\/test\/java\/testapi[4:35]","start":1644084428737,"end":1644084429042,"title":"src\/test\/java\/testapi[4:35] 19:07:08.737-19:07:09.042 test API post 3"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

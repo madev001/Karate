@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"TestFeatures\/week3\/matchFromcsv[1.1:20]","start":1645375149332,"end":1645375149586,"title":"TestFeatures\/week3\/matchFromcsv[1.1:20] 17:39:09.332-17:39:09.586 get - <id>","className":"failed"},{"id":2,"group":1,"content":"TestFeatures\/week3\/matchFromcsv[1.2:20]","start":1645375149590,"end":1645375150025,"title":"TestFeatures\/week3\/matchFromcsv[1.2:20] 17:39:09.590-17:39:10.025 get - <id>","className":"failed"},{"id":3,"group":1,"content":"TestFeatures\/week3\/matchFromcsv[1.3:20]","start":1645375150029,"end":1645375150478,"title":"TestFeatures\/week3\/matchFromcsv[1.3:20] 17:39:10.029-17:39:10.478 get - <id>","className":"failed"},{"id":4,"group":1,"content":"TestFeatures\/week2\/verifiInCsv[1:8]","start":1645375141941,"end":1645375142997,"title":"TestFeatures\/week2\/verifiInCsv[1:8] 17:39:01.941-17:39:02.997 check if response contains csv values ids"},{"id":5,"group":1,"content":"TestFeatures\/week2\/verifiInCsv[2:20]","start":1645375143000,"end":1645375145257,"title":"TestFeatures\/week2\/verifiInCsv[2:20] 17:39:03.000-17:39:05.257 check if response contains csv values emails"},{"id":6,"group":1,"content":"TestFeatures\/week3\/CallJavaClass[1:9]","start":1645375147281,"end":1645375147297,"title":"TestFeatures\/week3\/CallJavaClass[1:9] 17:39:07.281-17:39:07.297 check if response contains csv values ids","className":"failed"},{"id":7,"group":1,"content":"TestFeatures\/week2\/elementFromUrl2url[1:7]","start":1645375139310,"end":1645375139737,"title":"TestFeatures\/week2\/elementFromUrl2url[1:7] 17:38:59.310-17:38:59.737 get if cerulean exist"},{"id":8,"group":1,"content":"TestFeatures\/week2\/elementFromUrl2url[2:19]","start":1645375139740,"end":1645375141861,"title":"TestFeatures\/week2\/elementFromUrl2url[2:19] 17:38:59.740-17:39:01.861 get if id 2 exist and verify the name  in the second url"},{"id":9,"group":1,"content":"TestFeatures\/week3\/matchFromAllData[1:7]","start":1645375147332,"end":1645375149299,"title":"TestFeatures\/week3\/matchFromAllData[1:7] 17:39:07.332-17:39:09.299 check if response contains csv values emails","className":"failed"},{"id":10,"group":1,"content":"TestFeatures\/week3\/callGetPerson[1:4]","start":1645375145321,"end":1645375147170,"title":"TestFeatures\/week3\/callGetPerson[1:4] 17:39:05.321-17:39:07.170 verify if email exist in page 2","className":"failed"},{"id":11,"group":1,"content":"TestFeatures\/Week1\/testapi[1:8]","start":1645375132619,"end":1645375137322,"title":"TestFeatures\/Week1\/testapi[1:8] 17:38:52.619-17:38:57.322 test API get 1"},{"id":12,"group":1,"content":"TestFeatures\/Week1\/testapi[2:18]","start":1645375137328,"end":1645375137805,"title":"TestFeatures\/Week1\/testapi[2:18] 17:38:57.328-17:38:57.805 test API post 2"},{"id":13,"group":1,"content":"TestFeatures\/Week1\/testapi[3:26]","start":1645375137809,"end":1645375138471,"title":"TestFeatures\/Week1\/testapi[3:26] 17:38:57.809-17:38:58.471 test API post 3"},{"id":14,"group":1,"content":"TestFeatures\/Week1\/testapi[4:34]","start":1645375138475,"end":1645375138903,"title":"TestFeatures\/Week1\/testapi[4:34] 17:38:58.475-17:38:58.903 test API post 3"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

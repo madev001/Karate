@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.reusableFeatures.Get_comment</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-02-23 10:37:34 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>get comments</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/reusableFeatures/Get_comment.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get comments</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">get comments</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1112</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url JsonPlaceholderURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:37:32.913 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = 2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/posts/&#39;, id ,&#39;/comments&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1092</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">22:37:33.271 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/posts/2/comments
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:37:34.014 response time in milliseconds: 739
+1 &lt; 200
+1 &lt; Date: Wed, 23 Feb 2022 21:37:24 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1645651861
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: max-age=43200
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Etag: W/&quot;5fe-SNRxXTWeTmW/Q4d2qiV3mieyWj8&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 387
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=z1AMAzozWVRWAtfy2SnauWv971I%2FLqAWjp%2FZfW3BjUX%2BAy6U9fIjQnOubn9rWJ7VkKH0h97cVXyounZ%2F%2FPPbOu81Yn72IHszhcX%2FJYGTVhd9mObausrXkJWMu%2BKssLR4xCe6QYEQztKjYXYZfz6C&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6e23985f6f2359a7-MXP
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+[
+  {
+    &quot;postId&quot;: 2,
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;et fugit eligendi deleniti quidem qui sint nihil autem&quot;,
+    &quot;email&quot;: &quot;Presley.Mueller@myrl.com&quot;,
+    &quot;body&quot;: &quot;doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in&quot;
+  },
+  {
+    &quot;postId&quot;: 2,
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;repellat consequatur praesentium vel minus molestias voluptatum&quot;,
+    &quot;email&quot;: &quot;Dallas@ole.me&quot;,
+    &quot;body&quot;: &quot;maiores sed dolores similique labore et inventore et\nquasi temporibus esse sunt id et\neos voluptatem aliquam\naliquid ratione corporis molestiae mollitia quia et magnam dolor&quot;
+  },
+  {
+    &quot;postId&quot;: 2,
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;et omnis dolorem&quot;,
+    &quot;email&quot;: &quot;Mallory_Kunze@marie.org&quot;,
+    &quot;body&quot;: &quot;ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque&quot;
+  },
+  {
+    &quot;postId&quot;: 2,
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;provident id voluptas&quot;,
+    &quot;email&quot;: &quot;Meghan_Littel@rene.us&quot;,
+    &quot;body&quot;: &quot;sapiente assumenda molestiae atque\nadipisci laborum distinctio aperiam et ab ut omnis\net occaecati aspernatur odit sit rem expedita\nquas enim ipsam minus&quot;
+  },
+  {
+    &quot;postId&quot;: 2,
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;eaque et deleniti atque tenetur ut quo ut&quot;,
+    &quot;email&quot;: &quot;Carmen_Keeling@caroline.name&quot;,
+    &quot;body&quot;: &quot;voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis&quot;
+  }
+]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">22:37:34.052 [print] [
+  {
+    &quot;postId&quot;: 2,
+    &quot;id&quot;: 6,
+    &quot;name&quot;: &quot;et fugit eligendi deleniti quidem qui sint nihil autem&quot;,
+    &quot;email&quot;: &quot;Presley.Mueller@myrl.com&quot;,
+    &quot;body&quot;: &quot;doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in&quot;
+  },
+  {
+    &quot;postId&quot;: 2,
+    &quot;id&quot;: 7,
+    &quot;name&quot;: &quot;repellat consequatur praesentium vel minus molestias voluptatum&quot;,
+    &quot;email&quot;: &quot;Dallas@ole.me&quot;,
+    &quot;body&quot;: &quot;maiores sed dolores similique labore et inventore et\nquasi temporibus esse sunt id et\neos voluptatem aliquam\naliquid ratione corporis molestiae mollitia quia et magnam dolor&quot;
+  },
+  {
+    &quot;postId&quot;: 2,
+    &quot;id&quot;: 8,
+    &quot;name&quot;: &quot;et omnis dolorem&quot;,
+    &quot;email&quot;: &quot;Mallory_Kunze@marie.org&quot;,
+    &quot;body&quot;: &quot;ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque&quot;
+  },
+  {
+    &quot;postId&quot;: 2,
+    &quot;id&quot;: 9,
+    &quot;name&quot;: &quot;provident id voluptas&quot;,
+    &quot;email&quot;: &quot;Meghan_Littel@rene.us&quot;,
+    &quot;body&quot;: &quot;sapiente assumenda molestiae atque\nadipisci laborum distinctio aperiam et ab ut omnis\net occaecati aspernatur odit sit rem expedita\nquas enim ipsam minus&quot;
+  },
+  {
+    &quot;postId&quot;: 2,
+    &quot;id&quot;: 10,
+    &quot;name&quot;: &quot;eaque et deleniti atque tenetur ut quo ut&quot;,
+    &quot;email&quot;: &quot;Carmen_Keeling@caroline.name&quot;,
+    &quot;body&quot;: &quot;voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

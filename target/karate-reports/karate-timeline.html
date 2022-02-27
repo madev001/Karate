@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"TestFeatures\/week3\/matchFromcsv[1.1:20]","start":1645974566769,"end":1645974567012,"title":"TestFeatures\/week3\/matchFromcsv[1.1:20] 16:09:26.769-16:09:27.012 get - <id>","className":"failed"},{"id":2,"group":1,"content":"TestFeatures\/week3\/matchFromcsv[1.2:20]","start":1645974567019,"end":1645974567254,"title":"TestFeatures\/week3\/matchFromcsv[1.2:20] 16:09:27.019-16:09:27.254 get - <id>","className":"failed"},{"id":3,"group":1,"content":"TestFeatures\/week3\/matchFromcsv[1.3:20]","start":1645974567260,"end":1645974567446,"title":"TestFeatures\/week3\/matchFromcsv[1.3:20] 16:09:27.260-16:09:27.446 get - <id>","className":"failed"},{"id":4,"group":1,"content":"TestFeatures\/week2\/verifiInCsv[1:8]","start":1645974565110,"end":1645974565409,"title":"TestFeatures\/week2\/verifiInCsv[1:8] 16:09:25.110-16:09:25.409 check if response contains csv values ids"},{"id":5,"group":1,"content":"TestFeatures\/week2\/verifiInCsv[2:20]","start":1645974565413,"end":1645974565623,"title":"TestFeatures\/week2\/verifiInCsv[2:20] 16:09:25.413-16:09:25.623 check if response contains csv values emails"},{"id":6,"group":1,"content":"TestFeatures\/week3\/CallJavaClass[1:8]","start":1645974566213,"end":1645974566452,"title":"TestFeatures\/week3\/CallJavaClass[1:8] 16:09:26.213-16:09:26.452 check if response contains csv values ids"},{"id":7,"group":1,"content":"TestFeatures\/week2\/elementFromUrl2url[1:7]","start":1645974564345,"end":1645974564569,"title":"TestFeatures\/week2\/elementFromUrl2url[1:7] 16:09:24.345-16:09:24.569 get if cerulean exist"},{"id":8,"group":1,"content":"TestFeatures\/week2\/elementFromUrl2url[2:19]","start":1645974564574,"end":1645974565012,"title":"TestFeatures\/week2\/elementFromUrl2url[2:19] 16:09:24.574-16:09:25.012 get if id 2 exist and verify the name  in the second url"},{"id":9,"group":1,"content":"TestFeatures\/week3\/matchFromAllData[1:6]","start":1645974566495,"end":1645974566722,"title":"TestFeatures\/week3\/matchFromAllData[1:6] 16:09:26.495-16:09:26.722 check if response contains csv values emails"},{"id":10,"group":1,"content":"TestFeatures\/week3\/callGetPerson[1:4]","start":1645974565678,"end":1645974566113,"title":"TestFeatures\/week3\/callGetPerson[1:4] 16:09:25.678-16:09:26.113 verify if email doesn't exist in page 2"},{"id":11,"group":1,"content":"TestFeatures\/Week1\/testapi[1:8]","start":1645974561326,"end":1645974562487,"title":"TestFeatures\/Week1\/testapi[1:8] 16:09:21.326-16:09:22.487 test API get 1"},{"id":12,"group":1,"content":"TestFeatures\/Week1\/testapi[2:18]","start":1645974562495,"end":1645974562828,"title":"TestFeatures\/Week1\/testapi[2:18] 16:09:22.495-16:09:22.828 test API post 2"},{"id":13,"group":1,"content":"TestFeatures\/Week1\/testapi[3:26]","start":1645974562832,"end":1645974563668,"title":"TestFeatures\/Week1\/testapi[3:26] 16:09:22.832-16:09:23.668 test API post 3"},{"id":14,"group":1,"content":"TestFeatures\/Week1\/testapi[4:34]","start":1645974563672,"end":1645974563929,"title":"TestFeatures\/Week1\/testapi[4:34] 16:09:23.672-16:09:23.929 test API post 3"},{"id":15,"group":1,"content":"TestFeatures\/Week4\/Get_comment_by_idPost[1:11]","start":1645974571035,"end":1645974571465,"title":"TestFeatures\/Week4\/Get_comment_by_idPost[1:11] 16:09:31.035-16:09:31.465 Get comments by post","className":"failed"},{"id":16,"group":1,"content":"TestFeatures\/Week4\/CreatePost&GetRes1[1.1:18]","start":1645974570359,"end":1645974570999,"title":"TestFeatures\/Week4\/CreatePost&GetRes1[1.1:18] 16:09:30.359-16:09:30.999 create post","className":"failed"},{"id":17,"group":1,"content":"TestFeatures\/Week4\/Create_post[1.1:21]","start":1645974567497,"end":1645974568227,"title":"TestFeatures\/Week4\/Create_post[1.1:21] 16:09:27.497-16:09:28.227 Create  post by users ids from csv and get response","className":"failed"},{"id":18,"group":1,"content":"TestFeatures\/Week4\/Create_post[1.2:21]","start":1645974568230,"end":1645974568945,"title":"TestFeatures\/Week4\/Create_post[1.2:21] 16:09:28.230-16:09:28.945 Create  post by users ids from csv and get response","className":"failed"},{"id":19,"group":1,"content":"TestFeatures\/Week4\/Create_post[1.3:21]","start":1645974568949,"end":1645974569605,"title":"TestFeatures\/Week4\/Create_post[1.3:21] 16:09:28.949-16:09:29.605 Create  post by users ids from csv and get response","className":"failed"},{"id":20,"group":1,"content":"TestFeatures\/Week4\/Create_post[1.4:21]","start":1645974569608,"end":1645974570227,"title":"TestFeatures\/Week4\/Create_post[1.4:21] 16:09:29.608-16:09:30.227 Create  post by users ids from csv and get response","className":"failed"},{"id":21,"group":1,"content":"TestFeatures\/Week4\/get_post&comments_from_csv[1.1:16]","start":1645974571498,"end":1645974572386,"title":"TestFeatures\/Week4\/get_post&comments_from_csv[1.1:16] 16:09:31.498-16:09:32.386 Get post and comments from csv"},{"id":22,"group":1,"content":"TestFeatures\/Week4\/get_post&comments_from_csv[1.2:17]","start":1645974572389,"end":1645974573311,"title":"TestFeatures\/Week4\/get_post&comments_from_csv[1.2:17] 16:09:32.389-16:09:33.311 Get post and comments from csv"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

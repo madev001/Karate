@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"TestFeatures\/week2\/verifiInCsv[1:8]","start":1645314723429,"end":1645314723820,"title":"TestFeatures\/week2\/verifiInCsv[1:8] 00:52:03.429-00:52:03.820 check if response contains csv values ids"},{"id":2,"group":1,"content":"TestFeatures\/week2\/verifiInCsv[2:20]","start":1645314723829,"end":1645314724161,"title":"TestFeatures\/week2\/verifiInCsv[2:20] 00:52:03.829-00:52:04.161 check if response contains csv values emails"},{"id":3,"group":1,"content":"TestFeatures\/week3\/CallJavaClass[1:9]","start":1645314724727,"end":1645314724751,"title":"TestFeatures\/week3\/CallJavaClass[1:9] 00:52:04.727-00:52:04.751 check if response contains csv values ids","className":"failed"},{"id":4,"group":1,"content":"TestFeatures\/week2\/elementFromUrl2url[1:7]","start":1645314722066,"end":1645314722466,"title":"TestFeatures\/week2\/elementFromUrl2url[1:7] 00:52:02.066-00:52:02.466 get if cerulean exist"},{"id":5,"group":1,"content":"TestFeatures\/week2\/elementFromUrl2url[2:19]","start":1645314722476,"end":1645314723268,"title":"TestFeatures\/week2\/elementFromUrl2url[2:19] 00:52:02.476-00:52:03.268 get if id 2 exist and verify the name  in the second url"},{"id":6,"group":1,"content":"TestFeatures\/week3\/matchFromAllData[1:7]","start":1645314724795,"end":1645314725233,"title":"TestFeatures\/week3\/matchFromAllData[1:7] 00:52:04.795-00:52:05.233 check if response contains csv values emails","className":"failed"},{"id":7,"group":1,"content":"TestFeatures\/week3\/callGetPerson[1:7]","start":1645314724286,"end":1645314724628,"title":"TestFeatures\/week3\/callGetPerson[1:7] 00:52:04.286-00:52:04.628 Title of your scenario","className":"failed"},{"id":8,"group":1,"content":"TestFeatures\/Week1\/testapi[1:8]","start":1645314718276,"end":1645314719785,"title":"TestFeatures\/Week1\/testapi[1:8] 00:51:58.276-00:51:59.785 test API get 1"},{"id":9,"group":1,"content":"TestFeatures\/Week1\/testapi[2:18]","start":1645314719805,"end":1645314720366,"title":"TestFeatures\/Week1\/testapi[2:18] 00:51:59.805-00:52:00.366 test API post 2"},{"id":10,"group":1,"content":"TestFeatures\/Week1\/testapi[3:26]","start":1645314720382,"end":1645314720882,"title":"TestFeatures\/Week1\/testapi[3:26] 00:52:00.382-00:52:00.882 test API post 3"},{"id":11,"group":1,"content":"TestFeatures\/Week1\/testapi[4:34]","start":1645314720896,"end":1645314721389,"title":"TestFeatures\/Week1\/testapi[4:34] 00:52:00.896-00:52:01.389 test API post 3"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
